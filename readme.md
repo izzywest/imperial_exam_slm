@@ -31,3 +31,7 @@ Route Examples:
 ### Kanban Board in progress
 
 ![alt text](/documentation/screenshots/kanban2.png "Title")
+
+### Kanban Board in progress
+
+![alt text](/documentation/screenshots/kanban.png "Title")
