@@ -1,19 +1,21 @@
 package Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 public class ImperialController {
 
-    @GetMapping("/api/calcCentimeterFromInches")
+    @GetMapping("/api/centimeter")
 
-    public double calcCentimeterFromInches(@GetMapping double inch) {
+    public double calcCentimeterFromInches(@RequestParam double inch) {
         return inch*2.54;
     }
 
-    @GetMapping("/api/calcMeterFromYard")
+    @GetMapping("/api/meter")
 
-    public double calcMeterFromYard(@GetMapping double yard) {
-        return yard / 1.094;
+    public double calcMeterFromYard(@RequestParam double yard) {
+        return yard/1.094;
     }
 
 }
